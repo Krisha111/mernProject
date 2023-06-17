@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import {Table,TableHead,TableBody,TableRow,TableCell,styled,Button,FormControl,InputLabel,Input} from '@mui/material'
+import {Table,TableHead,TableBody,TableRow,TableCell,styled,Button} from '@mui/material'
 import {getUsers,deleteUserapi} from '../service/api'
 import {Link} from 'react-router-dom'
 
@@ -35,27 +35,24 @@ export default function AllUsers() {
     <StyledTablee>
       <TableHead>
         <Thead>
-         <TableCell></TableCell>
+        
           <TableCell>Name</TableCell>
           <TableCell>Hobby</TableCell>
           <TableCell>Email</TableCell>
           <TableCell>Phone</TableCell>
           <TableCell></TableCell>
           <TableCell></TableCell>
+
         </Thead>
       </TableHead>
       <TableBody>
-      {/* <input type="checkbox" />  */}
+    
 
          {
            users.map(user=>(
             <>
            
             <TableRow key={user._id}>
-            <FormControl>
-              <InputLabel></InputLabel>
-              <Input type="checkbox"/>
-            </FormControl>
               <TableCell>{user.name}</TableCell>
               <TableCell>{user.hobbies}</TableCell>
               <TableCell>{user.email}</TableCell>

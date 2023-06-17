@@ -17,7 +17,6 @@ export default function Navbar() {
            <Tabs>Navbar</Tabs>
            <Tabs to='/all'>All Users</Tabs>
            <Tabs to='/add'>Add Users</Tabs>
-           <Tabs to='/inter'>POp up</Tabs>
         </Toolbar>
     </Header>
   
