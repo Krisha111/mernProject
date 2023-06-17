@@ -1,6 +1,4 @@
-
 const mongoose=require('mongoose')
-
 
 const happy =new mongoose.Schema({
    
@@ -17,11 +15,6 @@ const happy =new mongoose.Schema({
         type : String
        }
  })
- 
 
-
-const Category = mongoose.model("Category", happy)
-
-
-
+ const Category = mongoose.model("Category", happy)
 module.exports=Category;
